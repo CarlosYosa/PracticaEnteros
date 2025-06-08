@@ -1,9 +1,15 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   color: #333;
-  margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 .container {
@@ -22,20 +28,26 @@ body {
   top: 20px;
   right: 20px;
   font-size: 1em;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .centered-title {
   margin-top: 20px;
-  font-size: 4em; /* Al doble del tamaño */
+  font-size: 4em;
+  line-height: 1.2;
 }
 
 .ejercicio {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4em; /* Números más grandes */
+  font-size: 4em;
   margin: 40px 0;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .input {
@@ -57,6 +69,7 @@ body {
   border-radius: 5px;
   color: #333;
   transition: all 0.3s ease;
+  min-width: 120px;
 }
 
 .controles button:hover {
@@ -73,12 +86,34 @@ body {
   font-size: 2em;
 }
 
-.resultado p {
-  font-size: 1.5em;
-  margin: 20px 0;
-}
+/* Responsive - Para móviles */
+@media (max-width: 600px) {
+  .centered-title {
+    font-size: 3em;
+  }
 
-.temporizador {
-  margin-top: 30px;
-  font-size: 2em;
+  .ejercicio {
+    font-size: 2.5em;
+    margin: 30px 0;
+  }
+
+  .input {
+    font-size: 2.5em;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .controles button {
+    font-size: 0.9em;
+    padding: 10px 20px;
+    min-width: 100px;
+  }
+
+  .stats {
+    font-size: 0.9em;
+  }
+
+  .temporizador {
+    font-size: 1.5em;
+  }
 }
