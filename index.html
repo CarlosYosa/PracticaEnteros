@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suma de Enteros</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Aciertos y fallos -->
+    <div class="stats">
+      <p><strong>Aciertos:</strong> <span id="acierto">0</span></p>
+      <p><strong>Fallos:</strong> <span id="fallos">0</span></p>
+    </div>
+
+    <!-- Título -->
+    <h1 class="centered-title">SUMA DE ENTEROS</h1>
+
+    <!-- Ejercicio -->
+    <div class="ejercicio">
+      <span id="num1">0</span>
+      <span id="operacion">+</span>
+      <span id="num2">0</span>
+      <span>=</span>
+      <input type="number" id="respuesta" placeholder="Tu respuesta" />
+    </div>
+
+    <!-- Botones -->
+    <div class="controles">
+      <button onclick="validarRespuesta()">Validar</button>
+      <button onclick="reiniciar()">Reiniciar</button>
+    </div>
+
+    <!-- Mensaje de resultado -->
+    <div class="resultado">
+      <p id="mensaje"></p>
+    </div>
+
+    <!-- Temporizador -->
+    <div class="temporizador">
+      <p><strong>Temporizador:</strong> <span id="temporizador">20</span>s</p>
+    </div>
+
+    <p><strong>Nivel:</strong> 
+      <select id="nivel">
+        <option value="facil">Fácil (-20 a 20)</option>
+        <option value="medio">Medio (-50 a 50)</option>
+        <option value="dificil">Difícil (-100 a 100)</option>
+        <option value="super-dificil">Super Difícil (-200 a 200)</option>
+        <option value="yosa">Yosa (-500 a 500)</option>
+      </select>
+    </p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

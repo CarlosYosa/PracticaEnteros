@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  position: relative;
+}
+
+.stats {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1em;
+}
+
+.centered-title {
+  margin-top: 20px;
+  font-size: 4em; /* Al doble del tamaño */
+}
+
+.ejercicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4em; /* Números más grandes */
+  margin: 40px 0;
+  gap: 20px;
+}
+
+.input {
+  width: 200px;
+  padding: 15px;
+  font-size: 3em;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.controles button {
+  margin-right: 10px;
+  padding: 12px 24px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #add8e6;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.controles button:hover {
+  background-color: #87cefa;
+}
+
+.resultado p {
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+.temporizador {
+  margin-top: 30px;
+  font-size: 2em;
+}
+
+.resultado p {
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+.temporizador {
+  margin-top: 30px;
+  font-size: 2em;
+}
